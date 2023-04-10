@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container">
+
+    <br>
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="event-date">Day of Your Event</label>
+                        <input type="date" class="form-control" id="event-date">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="food-preference">Food Preference</label>
+                        <input type="text" class="form-control" id="food-preference" placeholder="Food">
+                    </div> 
+                    <div class="form-group">
+                        <label for="drink-preference">Drink of choice</label>
+                        <input type="text" class="form-control" id="drink-preference" placeholder="Drink">
+                    <div class="form-group">
+                        <label for="delivery time">Deliver By</label>
+                        <input type="time" class="form-control" id="event-time" placeholder="Time">
+                    </div>
+                    </div> 
+                    <br>
+                </div>  
+                <button id="add" class="btn btn-secondary form-control">Create</button>
+            </div>
+        </div>
+    </div>
+
+    <table id="list" class="table table-success">
+        <tr>
+            <th>Meal Choice</th>
+            <th>Date created</th>
+            <th>Event Date</th>
+            <th>Drink Choice</th>
+            <th>Actions</th>
+        </tr>
+    </table>
+
+    <script src="week10.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
